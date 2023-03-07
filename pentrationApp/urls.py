@@ -3,8 +3,10 @@ from pentrationApp import views
 
 urlpatterns = [
     
-    path("", views.index, name="index")
-    # path("login/", views.login_view, name="login_view"),
+    path("", views.login_view, name="index"),
+    path("login/", views.login_view, name="login_view")
+
+    
     # path("home", views.home, name="home"),
     # path("register/", views.register, name="register"),
     # path("adminpage/", views.admin, name="adminpage"),
